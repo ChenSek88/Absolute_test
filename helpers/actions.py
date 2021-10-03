@@ -30,6 +30,11 @@ def wait_vis(locator):
 	return lambda driver: WebDriverWait(driver, 30).until(EC.visibility_of_element_located(locator))
 
 
+@delay(0.5)
+def wait_invis(locator):
+	return lambda driver: WebDriverWait(driver, 30).until(EC.invisibility_of_element_located(locator))
+
+
 def assert_text(locator, text):
 	return lambda driver: WebDriverWait(driver, 30).until(EC.text_to_be_present_in_element(locator, text))
 

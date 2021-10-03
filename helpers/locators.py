@@ -13,3 +13,4 @@ class CalcPageLocators(object):
 	calc = (By.CSS_SELECTOR, '.calc-col-content button[name="calculate"]')
 	price = (By.CSS_SELECTOR, '.calc-result #result-sum')
 	number = (By.CSS_SELECTOR, '.calc-result #result-number')
+	calc_fields_disabled = (By.CSS_SELECTOR, '.calc-fields.calc-controls.disabled-content')

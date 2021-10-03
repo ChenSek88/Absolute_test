@@ -34,7 +34,10 @@ def choose_krasnodar():
 
 
 def calculate():
-	return wait_and_click(cpl.calc)
+	return series(
+		wait_and_click(cpl.calc), wait_vis(cpl.calc_fields_disabled),
+		wait_invis(cpl.calc_fields_disabled)
+	)
 
 
 def assert_calc_results():
