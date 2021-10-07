@@ -20,6 +20,13 @@ def choose_two_people():
 	return wait_and_click(cpl.two_people)
 
 
+def count_of_people(count):
+	locator = list(cpl.count)
+	new_locator = locator[1] + '[for="fr%s"]' %count
+	return wait_and_click(tuple(['css selector']) + tuple([new_locator]))
+
+
+
 def choose_mite():
 	return series(
 		wait_and_click(cpl.mite), wait_vis(cpl.mite_is_active)

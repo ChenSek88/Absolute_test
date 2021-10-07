@@ -6,7 +6,7 @@ def test_calc_mite():
 	return series(
 		go_to_calc_mite_url(),
 		assert_calc_mite_page_header(),
-		choose_two_people(),
+		count_of_people(2),
 		choose_mite(),
 		choose_krasnodar(),
 		calculate(),

@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 class CalcPageLocators(object):
 	header = (By.CSS_SELECTOR, '.calc-col-content__h1')
 	two_people = (By.CSS_SELECTOR, '.calc-col-content .step1 .form-radio-label[for="fr2"]')
+	count = (By.CSS_SELECTOR, '.calc-col-content .step1 .form-radio-label')
 	mite = (By.CSS_SELECTOR, '.antimite-type-controller[data-target="ak2"]')
 	mite_is_active = (By.CSS_SELECTOR, '.antimite-type-controller.checked[data-target="ak2"]')
 	region_list = (By.CSS_SELECTOR, '.calc-col-content #region-button')
