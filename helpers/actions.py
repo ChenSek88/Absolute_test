@@ -36,7 +36,7 @@ def wait_invis(locator):
 
 
 def assert_text(locator, text):
-	return lambda driver: WebDriverWait(driver, 30).until(EC.text_to_be_present_in_element(locator, text))
+	return lambda driver: WebDriverWait(driver, 5).until(EC.text_to_be_present_in_element(locator, text))
 
 
 def get_text_from_element(locator):

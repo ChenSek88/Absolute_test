@@ -21,10 +21,7 @@ def choose_two_people():
 
 
 def count_of_people(count):
-	locator = list(cpl.count)
-	new_locator = locator[1] + '[for="fr%s"]' %count
-	return wait_and_click(tuple(['css selector']) + tuple([new_locator]))
-
+	return wait_and_click(('css selector', ) + (cpl.count[1] + '[for="fr%s"]' %count,))
 
 
 def choose_mite():
